@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+        //  //  /////   //      //      /////////
+       //  //  //      //      //      //     //
+      //////  /////   //      //      //     //
+     //  //  //      //      //      //     //
+    //  //  //////  //////  //////  /////////
+
+    \\                  //   /////////   //////    //      //////        /
+     \\      //\\      //   //     //   //    //  //      //   ///      /
+      \\    //  \\    //   //     //   ///////   //      //   ///      /     
+       \\  //    \\  //   //     //   //  //    //      //   ///      /     
+        \\//      \\//   /////////   //   //   //////  //////        #
+
+      #############################################################
+      WebPage developed by VICTOR ROSA GOMEZ !!!!!!!!!!!!!!!!!!!!!!
+      HOPE YOU ENJOY IT :) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      #############################################################
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TPE</title>
+    <link rel="stylesheet" href="maincss.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--Scripts-->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function(){
+        
+        $("#ChargingPageDIV").delay(6000).fadeOut("slow").queue(function(){
+          $("body").addClass("scrollBody");
+          
+        });
+        $(".Page").addClass("doNotShowThisPage").queue(function(){
+          $("#mainPageBody").removeClass("doNotShowThisPage").addClass("showThisPage");
+        });
+        $("body, html").animate({scrollTop:0}, 1000, 'swing');
+        new WOW().init();
+        $(".buttonPage").click(function(){
+          var WhichButton = $(this).attr('id');
+          $("body, html").animate({scrollTop:0}, 600, 'swing', function() {
+            $(".Page").removeClass("ZoomBody").addClass("unZoomBody");
+            setTimeout(function() {
+              $(".Page").addClass('doNotShowThisPage');
+              setTimeout(function() {
+                if(WhichButton == "HomeButtonNavBar"){
+                  $("#mainPageBody").removeClass("doNotShowThisPage").addClass("showThisPage").removeClass("unZoomBody").addClass("ZoomBody");
+                }else if(WhichButton == "LiveDatabuttonNavBar"){
+                  $("#LiveDataPage").removeClass("doNotShowThisPage").addClass("showThisPage").removeClass("unZoomBody").addClass("ZoomBody");
+                }else if(WhichButton == "DossierButtonNavBar"){
+                  $("#dosseirPage").removeClass("doNotShowThisPage").addClass("showThisPage").removeClass("unZoomBody").addClass("ZoomBody");
+                }   
+              }, 1);
+            }, 1000);
+          });
+        });
+        $("#divButtonToScrollDown").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#divButtonToScrollDown").offset().top
+            }, 2000);
+        });
+        $("#divButtonToScrollDown1").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#divButtonToScrollDown1").offset().top
+            }, 2000);
+        });
+        $("#divButtonToScrollDown2").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#divButtonToScrollDown2").offset().top
+            }, 2000);
+        });
+        $("#scrollTopButton").click(function (){
+            $('html, body').animate({scrollTop:0}, 1000, 'swing');
+        });
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > $(window).height() - 100) {
+            $('#scrollTopButtonDiv').fadeIn();
+          }else{
+            $('#scrollTopButtonDiv').fadeOut();
+          }   
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="ChargingPageDIV" style="height: 100vh">
+      <div class="flex-center flex-column">
+        <div class="animated swing infinite slow">
+          <p id="icon" class="bounce infinite" style="text-shadow: rgb(30, 85, 179) 0px 0px 0px, rgb(32, 90, 189) 1px 1px 0px, rgb(34, 95, 200) 2px 2px 0px, rgb(36, 100, 211) 3px 3px 0px, rgb(37, 105, 222) 4px 4px 0px, rgb(39, 111, 233) 5px 5px 0px, rgb(41, 116, 244) 6px 6px 0px; font-size: 71px; color: rgb(252, 255, 254); height: 148px; width: 148px; line-height: 148px; border-radius: 14%; text-align: center; background-color: rgb(43, 121, 255);"> TPE </p> 
+        </div>
+        <h5 style="margin: 50px;" class="animated fadeIn mb-3">TPE de Victor Gomez, Nicolas Weisse et Victor Pires.</h5>
+        <p class="animated fadeIn text-muted">Attendre le chargement du site!</p>
+      </div>
+    </div>
+    <div id="scrollTopButtonDiv" >
+      <button id="scrollTopButton" class="btn special-color text-light">
+        Revenir en haut
+      </button>
+    </div>
+    <!--Start Home Page-->
+    <div id="mainPageBody" class="Page" style="background-color: white !important;">
+        <header>
+            <nav>
+                <div id="leftContentNavBar">
+                    <div id="NavlogoDiv">
+                        <p id="icon" style="text-shadow: rgb(30, 85, 179) 0px 0px 0px, rgb(32, 90, 189) 1px 1px 0px, rgb(34, 95, 200) 2px 2px 0px, rgb(36, 100, 211) 3px 3px 0px, rgb(37, 105, 222) 4px 4px 0px, rgb(39, 111, 233) 5px 5px 0px, rgb(41, 116, 244) 6px 6px 0px; font-size: 30px; color: rgb(252, 255, 254); height: 70px; width: 70px; line-height: 70px; border-radius: 14%; text-align: center; background-color: rgb(43, 121, 255);"> TPE </p> 
+                    </div>
+                    <div id="NavTitle">
+                        AutoPotager
+                    </div>
+                </div>
+                <div id="rightContentNavBar">
+                    <div id="linksDiv">
+                      <button class="buttonPage" id="HomeButtonNavBar" href="#">Home</button>
+                      <button class="buttonPage" id="LiveDatabuttonNavBar" href="#">LIVE DATA</button>
+                      <button class="buttonPage" id="DossierButtonNavBar" href="#">Dossier</button>
+                    </div>
+                </div>
+            </nav>
+            <div id="headerBody">
+                <video src="videos/TPEprojectTrailer3.mov" id="videoHeader" muted autoplay loop></video>
+                <div id="contentHeader">
+                    <h1>
+                        Potager Automatique
+                    </h1>
+                    <p id="headerIntroText">
+                        TPE de Victor Gomez, Nicolas Weisse et Victor Pires
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div id="contentPage">
+            <div id="contentPageMainPageIntroInline">
+                <div id="contentMainPageIntroText" class="slow wow fadeInUp">
+                    <h1>
+                        Probl&eacute;matique: Comment faire un potager automatique et quelles sont ces avantages?
+                    </h1>
+                    <p style="font-size: 18px;">
+                        Notre projet de TPE se consiste d'&eacute;tudier une relation d&rsquo;une des pratiques plus anciennes de l'humanit&eacute;, l&rsquo;agriculture. Et le r&eacute;sultat de l'&eacute;volution de la technologie dans les derni&egrave;res ann&eacute;es, la programmation et automatisation. Pour cela, on a d&eacute;cid&eacute; de faire un potager qui a pour objectif de fonctionner seule. L'id&eacute;e de faire une boite est venue &agrave; cause de l&rsquo;urbanisation et le manque de place pour ceux qui veulent pratiquer l&rsquo;agriculture personnel. L'id&eacute;e de l&rsquo;automatisation n&rsquo;est pas venue seulement &agrave; cause de notre int&eacute;r&ecirc;t de faire cette &eacute;tude, mais pour qu'on puisse laisser la plantation pour des longues p&eacute;riodes sans se pr&eacute;occuper.  Comme il s&rsquo;agit d&rsquo;une exp&eacute;rience, on a pens&eacute; en faire deux bo&icirc;tes, avec la m&ecirc;me taille et la m&ecirc;me quantit&eacute; de terre et le m&ecirc;me v&eacute;g&eacute;tal. Dans le cas de notre potager on a choisi la laitue, a cause de la vitesse de croissance et sa non-n&eacute;cessit&eacute; de trop de soleil. La seule diff&eacute;rence que, une des bo&icirc;tes est remplis de capteurs vis&eacute;e pour la bonne croissance de la laitue, et l&rsquo;autre est intouchable. Pour faire la comparaison entre automatis&eacute; et &ldquo;naturel&rdquo;. 
+                    </p>
+                    <div>
+                        <button id="DossierButtonNavBar" class="buttonPage buttonIntroDivMainPage">En voir plus dans le dossier</button>
+                    </div>
+                </div>
+                <div id="contentMainPAgeIntroSubDiv" class="slow wow fadeInUp">
+                    <div id="contentMainPAgeIntroSubDivImg">
+                        <img src="img/img2Box.jpg" id="imgIntroMainPageInSubDiv">
+                    </div>
+                </div>
+            </div>
+            <video class="slow wow fadeInUp" src="videos/TPEprojectTrailer3.mov" class="z-depth-1-half" id="videoIntroMainPage" controls>  
+                <source src="videos/TPEprojectTrailer3.mov" type="video/mp4">
+            </video>
+        </div>
+        <footer class="page-footer font-small special-color">
+            <div class="footer-copyright text-center py-3">TPE: Potager automatique par Victor Gomez, Victor Pires et Nicolas Weisse</div>  
+        </footer>
+    </div>
+    <!--End Home Page-->
+
+    <!--Start Dossier Page-->
+    <div id="dosseirPage" class="Page" style="background-color: white;">
+        <header>
+            <nav>
+                <div id="leftContentNavBar">
+                    <div id="NavlogoDiv">
+                        <p id="icon" style="text-shadow: rgb(30, 85, 179) 0px 0px 0px, rgb(32, 90, 189) 1px 1px 0px, rgb(34, 95, 200) 2px 2px 0px, rgb(36, 100, 211) 3px 3px 0px, rgb(37, 105, 222) 4px 4px 0px, rgb(39, 111, 233) 5px 5px 0px, rgb(41, 116, 244) 6px 6px 0px; font-size: 30px; color: rgb(252, 255, 254); height: 70px; width: 70px; line-height: 70px; border-radius: 14%; text-align: center; background-color: rgb(43, 121, 255);"> TPE </p> 
+                    </div>
+                    <div id="NavTitle">
+                        AutoPotager
+                    </div>
+                </div>
+                <div id="rightContentNavBar">
+                    <div id="linksDiv">
+                      <button class="buttonPage" id="HomeButtonNavBar" href="#">Home</button>
+                      <button class="buttonPage" id="LiveDatabuttonNavBar" href="#">LIVE DATA</button>
+                      <button class="buttonPage" id="DossierButtonNavBar" href="#">Dossier</button>
+                    </div>
+                </div>
+            </nav>
+            <div id="headerBody">
+                <img src="img/imageDossier.jpg" id="videoHeader" >
+                <div id="contentHeader">
+                    <h1>
+                        Dossier
+                    </h1>
+                    <p id="headerIntroText">
+                        Vous &ecirc;tes sur la page: Dossier
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div id="contentPage">
+            <div id="introDossierPage">
+                <div id="introDossierText">
+                    <h1 class="wow fadeInUp">
+                        Introduction
+                    </h1>
+                    <p class="slow wow fadeInUp">
+                        L&rsquo;id&eacute;e de notre TPE est un r&eacute;sultat de plusieurs pens&eacute;es sur des enjeux actuels, dans le secteur &eacute;cologique, plus pr&eacute;cis&eacute;ment, pour r&eacute;soudre les enjeux de l&rsquo;agriculture intensive et du transport du lieu de production au consommateur. Ce dernier d&eacute;gage une tr&egrave;s grande quantit&eacute; de pollution tous les jours. Une solution pour affronter ces enjeux, serait de faire des potagers en ville: sur les toits d'immeubles ou dans les jardins. Par contre avec cette solution appara&icirc;t un autre probl&egrave;me, celui de devoir s&rsquo;occuper tous les jours du potager. Pour cela on a rassembler une des plus anciennes pratiques de l&rsquo;humanit&eacute;, l&rsquo;agriculture, avec les nouvelles et plus r&eacute;centes technologies.
+                    </p>
+                    <p class="slow wow fadeInUp">
+                        Pour r&eacute;soudre ces enjeux, d&eacute;crits ci-dessus, on a cr&eacute;&eacute; un potager automatique. Pour cela on a construit une bo&icirc;te,remplie &agrave; moiti&eacute;e avec de la terre, o&ugrave; sont plant&eacute;s des laitues. Pour la partie technologie on a fait une deuxi&egrave;me boite bien plus petite reli&eacute;e &agrave; la plus grande, o&uacute;, on a toute la partie Hardware du projet. Pour la partie informatique on a utilis&eacute; des fonctions Cloud et plusieurs langages de programmation. Comme dit pr&eacute;c&eacute;demment on a fait cela pour permettre d&rsquo;une fa&ccedil;on pratique, efficace et &eacute;cologique d&rsquo;avoir plus de vert dans les grandes villes et avoir quelques laitues ou d&rsquo;autres l&eacute;gumes frais. D&rsquo;un point de vue &eacute;cologique, ce syst&egrave;me &eacute;vite le transport et l&rsquo;utilisation de m&eacute;thodes d&rsquo;agriculture polluantes.En m&ecirc;me temps il ne perturbe pas le quotidien de l&rsquo;utilisateur,du fait qu&rsquo;il n&rsquo;y a pas besoin de s&rsquo;en occuper et peut observer &agrave; distance les r&eacute;sultats.
+                    </p>
+                </div>
+                <div id="introDossierImg">
+                    <img src="img/img2Box.jpg" id="imgInDivIntroDossier" class="slow wow fadeInUp">
+                </div>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="structureDiv">
+                <div id="introDossierText">
+                    <h1 class=" wow fadeInUp">
+                        La partie structurale
+                    </h1>
+                    <p class="slow wow fadeInUp">
+                        Notre base est faite de bois r&eacute;utilis&eacute;s. Le choix de bois a &eacute;t&eacute; fait, en pensant plus t&ocirc;t dans la disponibilit&eacute; des mat&eacute;riaux. Comme il s&rsquo;agit d&rsquo;une boite, on a construit avec une hauteur de 20 cm, pour avoir une quantite considerable de terre Notre potager a une forme de boite avec une base de 1 m&egrave;tre de long pour 0,80 m&egrave;tres, pour permettre planter plusieurs graines de laitue. Comme la laitue est un v&eacute;g&eacute;tal tr&egrave;s fragile, il doit &ecirc;tre prot&eacute;g&eacute; des fortes pluies. Pour &eacute;viter la destruction de la plante on a construit une base pour installer un toit avec des tubes PVC (Polychlorure de vinyle). Cette structure existe que dans la boite principale. Le choix de ce tube a &eacute;t&eacute; fait en relation &agrave; son prix et sa stabilit&eacute;.
+                    </p>
+                </div>
+                <div id="introDossierImg">
+                    <img src="img/MesurementsBOx.jpg" id="imgInDivIntroDossier" class="slow wow fadeInUp">
+                </div>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="titleBeforeCarousel">
+                <div id="TitleBeforeCarrouselText" class="wow fadeInUp">
+                    <h1>
+                        Hardware
+                    </h1>
+                </div>
+                <div id="miniIntroBeforeCrrouselDiv" class="slow wow fadeInUp">
+                    <p>
+                        Tous les capteurs sont plac&eacute;s dans une petite boite a c&ocirc;t&eacute; du potager automatique, bien prot&eacute;ger de l&rsquo;eau de pluie. 
+                    </p>
+                </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide slow wow fadeInUp data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/PSUimg.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                    PSU
+                                </h1>
+                                <p>
+                                    Tous les capteurs sont plac&eacute;s dans une petite boite a c&ocirc;t&eacute; du potager automatique, bien prot&eacute;ger de l&rsquo;eau de pluie.  Pour que tous les capteurs fonctionne on aura besoin de l'&eacute;nergie par contre la prise &agrave; des tensions et des intensit&eacute;s de courants non utilisable dans notre projet. Pour cela on utilise une PSU (Power supply), qui en fran&ccedil;ais, source de courant. Cet appareil est utilis&eacute; normalement dans des ordinateurs, donc ont a put avoir acc&egrave;s a les bonnes tensions et intensit&eacute;s n&eacute;cessaire pour le fonctionnement des capteurs et microcontr&ocirc;leur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/ESP12.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                    NODE MCU ESP12
+                                </h1>
+                                <p>
+                                    Le coeur du projet est la plaque Node MCU ESP12, qui est compos&eacute; d&rsquo;un contr&ocirc;leur avec un ship WI-FI permettant la connection avec IBM Cloud. Cette plaque a plusieurs porte de connection appel&eacute;s &ldquo;pins&rdquo;, ils nous permettent de connecter les modules &agrave; la plaque, il y en a deux types de pins, les analogique qui lisent et &eacute;crivent des valeurs qui sont comprises entre 0 et 1024 et les pins digitaux, qui envoient et re&ccedil;oivent seulement deux donn&eacute;s: 1(HIGH) et 0(LOW). Un probl&egrave;me avec cette plaque, c&rsquo;est que diff&eacute;remment d&rsquo;autre microcontr&ocirc;leur, qui ne disposent de Wi-Fi, mais disposent un nombre plus grand nombre de connections. Donc pour avoir acceso a la wifi mais ne pas en avoir des probleme avec le manques de pins, pour ce projet on a utilis&eacute; deux de ces plaques, une qui est la version Lolin et l&rsquo;autre Armica (qui on comme diff&eacute;rence des puissances de traitement de donn&eacute;s), une de ces plaques est donc pour les capteurs comme indiqu&eacute; ci dessus et un autre qui recevra les donn&eacute;es trait&eacute;s par le programme en IBM Cloud d'IBM qui en fonction de ces derni&egrave;res fera les actions n&eacute;cessaires. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="SeparationInsideCarousel">
+                            <div id="titleInsideCarouselSeparation">
+                                <h1 style="width: 100%; text-align: center;">
+                                        Les Modules
+                                </h1>
+                            </div>
+                            <div id="textInsideCarouselSeparation">
+                                <p>
+                                        Les modules sont les appareils qui sont connect&eacute;s au microcontr&ocirc;leur, ce sont donc les capteurs et ceux qui feront les actions n&eacute;cessaires. Ils sont connect&eacute;s au microcontr&ocirc;leur &agrave; travers du pin et se communiquent avec des signaux &eacute;lectriques traduits en binaire par le microcontr&ocirc;leur. On a s&eacute;parer les modules en deux cat&eacute;gories a cause des deux microcontr&ocirc;leurs, on a donc les capteurs et les modules d&rsquo;action.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/BH1750.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                    BH1750
+                                </h1>
+                                <p>
+                                    Ce capteur permet de voir quel est le niveau d&rsquo;exposition des plantes au soleil. L'unit&eacute; mesur&eacute; est en Lux ou Lx. Il marche gr&acirc;ce &agrave; un chip photosensible qui envio les donn&eacute;s au Microcontr&ocirc;leur, qui gr&acirc;ce &agrave; un script va transformer les donn&eacute;es binaires en lux. Il utilise deux &ldquo;Pins&rdquo; du Microcontr&ocirc;leur. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/SoilMoistureSensor.jpg);">
+        
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        Soil Moisture
+                                </h1>
+                                <p>
+                                        En fan&ccedil;ais Capteur d&rsquo;humidit&eacute; du sol, nous permet de savoir quand est le moment d&rsquo;arroser les plantes. Il marche en analysant le courant sort d&rsquo;une borne n&eacute;gative, passe par la terre et revient dans une borne n&eacute;gative. Ce courant, qui est diff&eacute;rent en fonction de l'humidit&eacute; du sol est analys&eacute; par un chip qui envoi une valeur entre 0 et 1024, ou 1024 est tr&egrave;s humide et 0 l&rsquo;oppos&eacute;. Il utilise un seul pin du microcontr&ocirc;leur. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/DHT11.jpg);">
+        
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        DHT11
+                                </h1>
+                                <p>
+                                        Le DHT11 est un capteur  de temp&eacute;rature et humidit&eacute; de l&rsquo;air. Il est capable de mesurer des temp&eacute;ratures de 0 &agrave; 50 degr&eacute;s celsius, et un taux entre 20 et 90% de l&rsquo;air. Il sert a voir si c&rsquo;est n&eacute;cessaire d'augmenter le nombre d&rsquo;arrosage par jour en cas de grande chaleur.         
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/rainSensor.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        Rain Sensor
+                                </h1>
+                                <p>
+                                        Rain Sensor: capteur de pluie en fran&ccedil;ais, nous permet de savoir s&rsquo;il pleut ou non, avec cela on sait si on doit fermer ou ouvrir le toit du potager. Ce capteur marche d&rsquo;une fa&ccedil;on similaire a d&ucirc; Soil Moisture Sensor, c&rsquo;est a dire, il envoi un courant &eacute;lectrique dans une borne positive, qui passe par l&rsquo;eau va dans une borne negative qui est donc analys&eacute; par un chip qui envoi donc des valeurs digitales 1 quand il pleut ou 0 quand il pleut pas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/4channelRelayModule.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        4 Channel Relay Module
+                                </h1>
+                                <p>
+                                        4 Channel Relay Module, est un module qui peut &ecirc;tre compar&eacute; &agrave; un interrupteur, par contre celui la est automatique. Donc comme dit de m&ecirc;me fa&ccedil;on qu'un interrupteur, il laisse ou non passer le courant, quand le microcontr&ocirc;leur envoie un signal digital 0(LOW) le relay laisse passer le courant et pour 1(HIGH) il ne laisse pas passer. Ce module nous a permis d&rsquo;allumer ou &eacute;teindre la lampe UV, ou la valve sol&eacute;no&iuml;de, ou une pompe d&rsquo;eaux.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/solenoid.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        Soleinoide
+                                </h1>
+                                <p>
+                                        Valve Sol&eacute;no&iuml;de peut &ecirc;tre compar&eacute; &agrave; un robinet, quand du courant passe par elle, un petit moteur est activ&eacute; qui va ouvrir le petit robinet interne laissant ainsi passer de l&rsquo;eau. Donc en fonction du signal envoy&eacute; au relay, il va laisser passer du courant ou non par la valve et donc arrosant ou non les plantes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/Hbridge.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        H Bridge
+                                </h1>
+                                <p>
+                                        Pont en H, ce module va permettre de faire un moteur tourner ver un sens ou un autre ou ne pas tourner. Ce module marche avec un chip qui re&ccedil;oit des signaux de deux pins du microcontr&ocirc;leur dont un va donner l&rsquo;ordre au chip de faire tourner le moteur dans un sens et l&rsquo;autre faire le moteur tourner ver un autre sens, dans le cas ou les deux non aucun signal le moteur s'arr&ecirc;te. Les signaux des deux pins doivent aussi &ecirc;tre de nature digital c&rsquo;est &agrave; dire 1(HIGH) ou 0(LOW).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="slidersCarousel" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a id="slidersCarousel" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="titleBeforeCarousel">
+                <div id="TitleBeforeCarrouselText">
+                    <h1 class="wow fadeInUp">
+                            Software
+                    </h1>
+                </div>
+                <div id="miniIntroBeforeCrrouselDiv">
+                    <p class="slow wow fadeInUp">
+                        Le software est ce qui fait tout fonctionner, car sans les programmes les plaques et modules seraient inutiles. On a utilis&eacute; plusieurs technologies et langages qui sont normalement utilis&eacute;s par grandes entreprises et sont tr&egrave;s sophistiqu&eacute;s: pour le microcontr&ocirc;leur on a utilis&eacute; un langage nomm&eacute; C qui est un des plus sophistiqu&eacute;s quand le domaine est des appareils de ce type, sur IBM Cloud pour le traitement de donn&eacute;s on a utilis&eacute; du Node Red, pour le site web on a utilis&eacute; du HTML, CSS, et JS ainsi comme de frameworks Jquery et Bootstrap et pour l&rsquo;application portable on a utilis&eacute; du C# et une technologie de Microsoft, Xamarin. Toutes ces softwares sont programm&eacute;s dans ce que nous appelons des Integrated Development Environments ou IDE, il y en existe des milliers dans tout le monde, ce sont des applications qui nous permettent de tourner le code de le tester et de l'&eacute;crire, dans notre cas on a utilis&eacute; trois : Visual Studio Code, Visual Studio et Arduino IDE.  Voyons maintenant les technologies et langages utilis&eacute;s pour le fonctionnement du projet:
+                    </p>
+                </div>
+            </div>
+            <div id="carouselExampleControls1" class="carousel slide slow wow fadeInUp data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/IBMcloud.png);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                    IBM IOT Cloud
+                                </h1>
+                                <p>
+                                        IBM IOT Cloud est la technologie qui fonctionne dans les serveurs d'IBM qui nous permet de connecter des appareils, en effet c&rsquo;est cela qui signifie le nom IOT, Internet Of Things en anglais et Internet des choses en fran&ccedil;ais est une m&eacute;thode utilis&eacute; chaque fois plus aujourd'hui, ou on peut connecter plusieurs objet &agrave; l&rsquo;internet et faire de fa&ccedil;on qu&rsquo;il se communiquent entre eux. Ce service d'IBM qui utilise cette m&eacute;thode, nous a permi de connecter le microcontr&ocirc;leur avec Node Red e donc r&eacute;cup&eacute;rer ou envoyer des donn&eacute;es au microcontr&ocirc;leur. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/MQTT.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        MQTT
+                                </h1>
+                                <p>
+                                        Entre le microcontr&ocirc;leur et IBM IOT Cloud, on a un intermediare, MQTT (Message Queuing Telemetry Transport), qui est un protocole de connexion utilise entre ces deux et sert plus au moin de facteur entre les deux. Diff&eacute;remment de son grand fr&egrave;re le HTTP (Hypertext Transfer Protocol) qui est utilis&eacute; pour l&rsquo;envoi de grandes donn&eacute;s comme de sites web, envoie des donn&eacute;s plus petites qui est ce qui envoie notre microcontr&ocirc;leur, e a l&rsquo;avantage de pouvoir envoyer ces donn&eacute;es m&ecirc;me avec de connexion de tr&egrave;s basse vitesse. Il est vraiment tr&egrave;s utilis&eacute; gr&acirc;ce &agrave; ces avantages et la facilit&eacute; de son usage, pour pouvoir l&rsquo;utiliser sur le microcontr&ocirc;leur on a dut telecharger un biblioth&eacute;que avec le code qui produit ce protocole et le passer au microcontr&ocirc;leur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/PubSubClient.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        PubSubClient
+                                </h1>
+                                <p>
+                                        Le PubSubClient qui signifie Publish Subscribe To Client est une biblioth&egrave;que qui se connecte automatiquement au serveur d'IBM Cloud IOT, a partir des adresse et donn&eacute;s donn&eacute;s, elle utilise le protocole MQTT pour se connecter. Elle est utilis&eacute; dans le Microcontr&ocirc;leur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/nodeRedCode.jpg);">
+        
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        Node red
+                                </h1>
+                                <p>
+                                        Node-RED est un outil de d&eacute;veloppement bas&eacute; sur le flux pour la programmation visuelle d&eacute;velopp&eacute; &agrave; l'origine par IBM pour connecter ensemble des p&eacute;riph&eacute;riques mat&eacute;riels, des API et des services en ligne dans le cadre de l'Internet des objets. Son Code base, c&rsquo;est &agrave; dire ce qui permet qu&rsquo;il fonctionne, est fait en Java Script (JS). Dans notre projet il est utilis&eacute; pour recevoir les donn&eacute;s via MQTT du microcontr&ocirc;leur avec les capteurs, de traiter les donn&eacute;s et donn&eacute; une r&eacute;ponse via MQTT au microcontr&ocirc;leur de r&eacute;action. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/ArduinoCode.jpg);">
+        
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        C
+                                </h1>
+                                <p>
+                                        Ce langage cr&eacute;&eacute; en 1972 peut &ecirc;tre utilis&eacute; dans n&rsquo;importe quel domaine de la technologie. Elle est tr&egrave;s efficace quand le sujet est Machine Instruction, en fran&ccedil;ais instructions de la machine, qui sont des types de langages dont le code est ex&eacute;cut&eacute; directement par la Central Processing Unit ou CPU et donne des instructions tr&egrave;s pr&eacute;cises, de plus ce langage est un langage de type Low-Level, c&rsquo;est &agrave; dire, il consomme un tr&egrave;s petit espace dans la m&eacute;moire de l&rsquo;appareil. Cela la rend un langage tr&egrave;s optimis&eacute; pour &ecirc;tre utilis&eacute; dans des OS (Operating System) ou des petits appareils, comme un microcontr&ocirc;leur dans notre cas. Cela ne veut pas dire que elle est seulement utilis&eacute; dans le domaine des choses petites, elle est aussi utilis&eacute; dans des Supercomputers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/CodeTPEapp.jpg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        C#
+                                </h1>
+                                <p>
+                                        C#, prononc&eacute; C Sharp, est un langage de programmation a &eacute;t&eacute; cr&eacute;&eacute; par Microsoft qui utilise la .NET framework. Ce langage est bas&eacute; sur le langage C++ principalement, mais aussi sur du Java et du Pascal. Diff&eacute;rente du C, le C# done pas des instructions exactes mais oui, des variables qui peuvent amener &agrave; des ex&eacute;cutions qui varient en fonction du syst&egrave;me op&eacute;rationnel et aussi elle manipule beaucoup les variables en utilisant plut&ocirc;t la m&eacute;moire. Au meme temp de m&ecirc;me fa&ccedil;on que le C, elle peut &ecirc;tre utilis&eacute; dans n&rsquo;importe quelle domaine, et compar&eacute; &agrave; d&rsquo;autres langage n'a pas besoin de trop de pouvoir de traitement de donn&eacute;s. Elle est beaucoup utilis&eacute; dans pour les jeux vid&eacute;os, mais dans notre cas on l&rsquo;a utilis&eacute; pour faire une application mobile, en utilisant la IDE Visual Studio avec la technologie d&eacute;velopp&eacute;e par Microsoft, Xamarin
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url('img/Anotação 2019-06-21 232155.jpg');">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        HTML
+                                </h1>
+                                <p>
+                                        Hyper text Markup Language, ou HTML, est une langage de marcation utilis&eacute; pour du Web Development. Ce langage permet de faire appara&icirc;tre du contenu dans les pages Web. Ce langage est un Langage de Marcation et pas un langage de programmation car il n&rsquo;utilise aucune logique de programmation mais oui des &eacute;v&eacute;nements (texte, vid&eacute;o, audio etc) connect&eacute;s par des hyper liaisons, cela s'appelle HyTime. On l&rsquo;utilise pour le site du projet avec d&rsquo;autres langages qui le &ldquo;compl&egrave;tent&rdquo;.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/css.jpeg);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        CSS
+                                </h1>
+                                <p>
+                                        Cascading style sheets (CSS) est un m&eacute;canisme de customisation de contenu &agrave; des documents. Il est plut&ocirc;t utilis&eacute; dans les documents Web, c&rsquo;est &agrave; dire des sites. Aussi comme les html ce n&rsquo;est pas un langage de programmation car il n'utilise aucune logique. Le CSS marche avec un link avec le html, et en utilisant des tags donn&eacute;s aux &eacute;l&eacute;ments html on peut donner des caract&eacute;ristiques &agrave; des &eacute;l&eacute;ments, comme sont hauteur avec &ldquo;height: + valeur&rdquo; ou sa largeur avec &ldquo;width: +valeur&rdquo;. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/js.png);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        JS
+                                </h1>
+                                <p>
+                                        Javascript, cette foi, un langage de programmation, car diff&eacute;remment de l&rsquo;HTML et du CSS il utilise de la logique, par contre il est vraiment beaucoup utilis&eacute; dans le WEB, pour dynamiser les sites web, de fa&ccedil;on &agrave; donner des actions au el&eacute;ments du html, et aussi modifier le CSS de cet &eacute;l&eacute;ment. Plusieurs technologies, APIs (Application Programming Interface), et biblioth&egrave;ques ont &eacute;t&eacute; cr&eacute;&eacute;s avec ce langage gr&acirc;ce &agrave; sa vari&eacute;t&eacute; et flexibilit&eacute;. Ces technologies et etc peuvent l&rsquo;am&eacute;liorer comme le Jquery, une biblioth&egrave;que, qui est aussi utilis&eacute; dans ce site. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/json.png);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        Json
+                                </h1>
+                                <p>
+                                        Le JSON (Javascript Object Notation) est une API utilis&eacute; beaucoup pour la communication entre plusieurs langages, c&rsquo;est presque un format universel de communication, car la majorit&eacute; des langages on des biblioth&egrave;ques ou technologies qui permettent de comprendre ces messages. Dans notre cas il est utilis&eacute; dans la communication MQTT, en effet le JSON est cr&eacute;&eacute; au niveau de la collecte des donn&eacute;s et est envoy&eacute; via un protocole MQTT par le PubSubClient, ce message est re&ccedil;u de l&rsquo;autre cot&eacute; par l&rsquo;IBM Cloud IOT qui l'envoi au Node Red, aussi comme dans l&rsquo;envoi des donn&eacute;s pour la r&eacute;action du Node Red Ver le microcontr&ocirc;leur de r&eacute;action.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="insideCarouselMasterDiv">
+                            <div id="imgInCarouselMasterDiv" style="background-image: url(img/bootstrap.png);">
+
+                            </div>
+                            <div id="textInCarouselMasterDiv">
+                                <h1>
+                                        Bootstrap
+                                </h1>
+                                <p>
+                                        Le Bootstrap est une framework utilis&eacute; dans le d&eacute;veloppement web, elle est utilis&eacute; pour dynamiser, dans le sens de possibilit&eacute; les sites web de &ldquo;rentrer&rdquo; dans n'importe quel taille d'&eacute;cran ou de type de dispositif. Il fait cela en modifiant automatiquement le CSS en fonction de que a configur&eacute; le d&eacute;veloppeur. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="slidersCarousel" class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a id="slidersCarousel" class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="titleBeforeCarousel">
+                <div id="TitleBeforeCarrouselText">
+                    <h1 class="wow fadeInUp">
+                            Curiosités sur le software
+                    </h1>
+                </div>
+                <div id="miniIntroBeforeCrrouselDiv">
+                    <p class="slow wow fadeInUp">
+                            Apr&egrave;s avoir vu tout cela, peut &ecirc;tre quelques doutes on apparut avec quel mots techniques utilis&eacute;s, ils sont expliqu&eacute;s ci dessous: 
+                    </p>
+                </div>
+            </div>
+            <div id="SomeCuriositiesDivDossierPage">
+                <div id="SomeCuriosityCardDiv">
+                    <dvi id="SomeCuriosityCardDivImg" class="slow wow fadeInUp" style="background-image: url(img/framework.png)"></dvi>
+                    <div id="SomeCuriosityCardDivText">
+                        <h1>
+                                Framework 
+                        </h1>
+                        <p>
+                                Une framework est une abstraction qui s&eacute;lectionne des grand composants d&rsquo;un langage ou syst&egrave;me et les raccourci, ce qui en fait qu&rsquo;il soit plus simple. Si le framework est bien fait, il peut m&ecirc;me acc&eacute;l&eacute;rer le langage sur lequel il est bas&eacute;, c&rsquo;est le cas du Jquery, une framework qui base sur des grandes lignes de Javascript devient quelque chose bien plus courte.
+                        </p>
+                    </div>
+                </div>
+                <div id="verticalSeparationLine"></div>
+                <div id="SomeCuriosityCardDiv">
+                    <dvi id="SomeCuriosityCardDivImg" class="slow wow fadeInUp" style="background-image: url(img/api.png)"></dvi>
+                    <div id="SomeCuriosityCardDivText">
+                        <h1>
+                                API 
+                        </h1>
+                        <p>
+                                Une API est un assemblage de m&eacute;thodes tr&egrave;s pr&eacute;cis permettant de connecter plusieurs blocs technologiques. Comme le JSON par exemple qui permet de connecter plusieurs langages de programmation et de les faire se communiquer l'une avec l&rsquo;autre, dans notre cas le microcontr&ocirc;leur ESP12 qui envoie des messages JSON via le protocole MQTT vers l&rsquo;IBM Cloud IOT qui peut donc comprendre le message.
+                        </p>
+                    </div>
+                </div>
+                <div id="verticalSeparationLine"></div>
+                <div id="SomeCuriosityCardDiv">
+                    <dvi id="SomeCuriosityCardDivImg" class="slow wow fadeInUp" style="background-image: url(img/lib.png)"></dvi>
+                    <div id="SomeCuriosityCardDivText">
+                        <h1>
+                                Bibliotéque 
+                        </h1>
+                        <p>
+                                Les biblioth&egrave;ques peuvent se ressembler avec les framework, mais ce n&rsquo;est pas la m&ecirc;me chose, la biblioth&egrave;que est aussi un code &eacute;crit &agrave; partir d&rsquo;un autre mais dans ce cas il a une utilisation extr&ecirc;mement sp&eacute;cifique dont on a pas besoin de la modifier, on l'appelle normalement par des tags, et donc automatiquement la biblioth&egrave;que fera ce qui est n&eacute;cessaire, c&rsquo;est le cas de la biblioth&egrave;que PubSubCleint dont on l'appelle dans le code du microcontr&ocirc;leur et apr&egrave;s elle envoie toute seule les donn&eacute;s &agrave; l&rsquo;adresse donn&eacute;.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="biologieDiv">
+                <div id="introDossierText">
+                    <h1 class=" wow fadeInUp">
+                        Biologie
+                    </h1>
+                    <p class="slow wow fadeInUp">Notre TPE nous demande un grand investissement dans les secteur de la physique et de l&rsquo;informatique. Mais il faut pas oublier le secteur biologique. En tous cas, notre objectif principal est de faciliter la croissance du v&eacute;g&eacute;tal choisi, dans ce cas, la laitue.   La laitue est une plante herbac&eacute;e largement cultiv&eacute;e pour ses feuilles tendres consomm&eacute;es comme l&eacute;gume, g&eacute;n&eacute;ralement cru en salade. Le choix de cultiver cette plante n&rsquo;a pas &eacute;t&eacute; al&eacute;atoire. Il est venu en pensant au temps de r&eacute;colte apr&egrave;s le semis, qui est de 55 jours. Mais ce n&rsquo;est pas seulement le temps qui nous a orient&eacute;, mais aussi le d&eacute;fi que nous nous sommes donn&eacute; pour la programmation et l&rsquo;organisation des donn&eacute;es, car la laitue est un l&eacute;gume tr&egrave;s fragil,elle ne doit pas &ecirc;tre trop expos&eacute;e au soleil. Les graines doivent avoir aussi beaucoup d&rsquo;espace entre elles (au moins 25 cm). En compensation, elle n&rsquo;a besoin que de 1 cm de profondeur de terre.</p>
+                    <p class="slow wow fadeInUp"> La laitue est une plante herbac&eacute;e largement cultiv&eacute;e pour ses feuilles tendres consomm&eacute;es comme l&eacute;gume, g&eacute;n&eacute;ralement cru en salade. Le choix de cultiver cette plante n&rsquo;a pas &eacute;t&eacute; al&eacute;atoire. Il est venu en pensant au temps de r&eacute;colte apr&egrave;s le semis, qui est de 55 jours. Mais ce n&rsquo;est pas seulement le temps qui nous a orient&eacute;, mais aussi le d&eacute;fi que nous nous sommes donn&eacute; pour la programmation et l&rsquo;organisation des donn&eacute;es, car la laitue est un l&eacute;gume tr&egrave;s fragil,elle ne doit pas &ecirc;tre trop expos&eacute;e au soleil. Les graines doivent avoir aussi beaucoup d&rsquo;espace entre elles (au moins 25 cm). En compensation, elle n&rsquo;a besoin que de 1 cm de profondeur de terre. </p>
+                    <p class="slow wow fadeInUp"> Le climat à São Paulo nous a favorisé lors du projet, car la laitue aime les températures de 10 à 24º C, ce qui nous a confortés dans le choix de l’époque au semis.
+                        La terre aussi est un facteur relativement facile car nous avons besoin d’un PH entre 6 et 7, qui est plutôt neutre, donc facilement trouvable.
+                        La laitue aime un sol très humide, c’est donc un défi de faire plusieurs irrigations dans la journée.
+                    </p>
+                    <div id="HorizontalDivisionLine" class="modifyHorizontalDivisionLine wow fadeInUp"></div>
+                    <p class="slow wow fadeInUp"> Grâce au système de collecte de données, vous pouvez voir les données de AutoPotager en direct. Cliquez sur le bouton ci-dessous:</p>
+                    <button id="LiveDatabuttonNavBar" class="buttonPage buttonIntroDivMainPage slow wow fadeInUp">Voir les donnés dans LIVE DATA</button>
+                </div>
+                <div id="introDossierImg">
+                    <img src="img/alface.jpg" id="imgInDivIntroDossier" >
+                </div>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="biologieDiv">
+                <div id="introDossierText">
+                    <h1 class=" wow fadeInUp">
+                            Conclusion
+                    </h1>
+                    <p>Apr&egrave;s plusieurs heures de travail et de patience, car l&rsquo;agriculture est un proc&egrave;s d&eacute;licat, nous avons finalement obtenu plusieurs resultats qui permettent de r&eacute;pondre &agrave; la probl&eacute;matique : comment faire un potager automatique et quels sont les avantages ?</p>
+
+                    <p> Pendant tous ces mois, en travaillant presque toutes les semaines dans ce projet, nous avons appris plusieures choses qui nous permettent de bien r&eacute;pondre &agrave; cette question, formul&eacute;e par nous-m&ecirc;me au debut de l&rsquo;ann&eacute;e. Pour nous, en tous cas, notre potager a &eacute;t&eacute; automatis&eacute; par la notion de micro-contr&ocirc;leur qui a &eacute;t&eacute; d&eacute;j&agrave; expliqu&eacute;e. Ces micro-contr&ocirc;leurs g&egrave;rent tous les senseurs qui ont permis de cr&eacute;er des conditions lors du codage, pour le bon fonctionnement des &eacute;l&eacute;ments automatiques du potager. Mais, quels sont les avantajes ?</p>
+                                    
+                    <p> Au d&eacute;but, l'id&eacute;e est apparue lors d&rsquo;un probl&egrave;me dans un potager dont notre classe s&rsquo;occupait. Le probl&egrave;me est venu principalement de l&rsquo;abandon des plantes qui ont pour cons&eacute;quence leur mort. Voil&agrave;, pourquoi l'id&eacute;e de l&rsquo;automatisme, que nous avons test&eacute; pendant les vacances de Juillet. Nous avons pr&eacute;par&eacute; le potager principal avec la certitude de son bon fonctionnement et, parall&egrave;lement, un deuxi&egrave;me potager, vide (sans m&eacute;canismes de contr&ocirc;le), pour simuler cet abandon des &eacute;l&egrave;ves de l&rsquo;ancien jardin.</p>
+                                    
+                    <p>Et notre exp&eacute;rience a fonctionn&eacute; positivement, car en ao&ucirc;t, au retour des classes nous y sommes all&eacute;s mesurer les plantes et comparer les deux potagers. En un mois, pendant l&rsquo;hiver (&eacute;poque non id&eacute;ale pour la laitue), les semences ont grandi de 6 centim&egrave;tres et elles ont atteint une couleur verte vive. Par contre, dans le potager qui simule l&rsquo;oubli des &eacute;l&egrave;ves, les plantes ont grandi de 4 centim&egrave;tres, et elles ont pr&eacute;sent&eacute; une couleur vert claire puis un aspect de feuilles mortes et s&egrave;ches.</p>
+                                    
+                    <p>Donc, l&rsquo;avantage principal est que le potager automatique qui analyse les donn&eacute;es n&eacute;cessaires fonctionne de mani&egrave;re positive. Et cela a mis en &eacute;vidence un nouvel avantage, &agrave; savoir, qu&rsquo;il est possible d&rsquo;avoir des potagers automatiques &agrave; S&atilde;o Paulo, o&ugrave; la majorit&eacute; des personnes et tr&egrave;s occup&eacute;e et doit travailler toute la journ&eacute;e ou s&rsquo;absenter, afin d&rsquo;avoir une bonne &ldquo;mini&rdquo; plantation de fleurs ou m&ecirc;me de l&eacute;gumes frais pour sa consommation personnelle.</p>
+                </div>
+                <div id="introDossierImg">
+                    <video src="videos/TPEprojectTrailer3_Trim.mp4" class="slow wow fadeInUp" id="imgInDivIntroDossier" muted autoplay loop>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer font-small special-color">
+            <div class="footer-copyright text-center py-3">TPE: Potager automatique par Victor Gomez, Victor Pires et Nicolas Weisse</div>  
+        </footer>
+    </div>
+    <!--End Dossier Page-->
+
+    <!--Start Live Data Page-->
+    <div id="LiveDataPage" class="Page" style="background-color: white;">
+        <header>
+            <nav>
+                <div id="leftContentNavBar">
+                    <div id="NavlogoDiv">
+                        <p id="icon" style="text-shadow: rgb(30, 85, 179) 0px 0px 0px, rgb(32, 90, 189) 1px 1px 0px, rgb(34, 95, 200) 2px 2px 0px, rgb(36, 100, 211) 3px 3px 0px, rgb(37, 105, 222) 4px 4px 0px, rgb(39, 111, 233) 5px 5px 0px, rgb(41, 116, 244) 6px 6px 0px; font-size: 30px; color: rgb(252, 255, 254); height: 70px; width: 70px; line-height: 70px; border-radius: 14%; text-align: center; background-color: rgb(43, 121, 255);"> TPE </p> 
+                    </div>
+                    <div id="NavTitle">
+                        AutoPotager
+                    </div>
+                </div>
+                <div id="rightContentNavBar">
+                    <div id="linksDiv">
+                      <button class="buttonPage" id="HomeButtonNavBar" href="#">Home</button>
+                      <button class="buttonPage" id="LiveDatabuttonNavBar" href="#">LIVE DATA</button>
+                      <button class="buttonPage" id="DossierButtonNavBar" href="#">Dossier</button>
+                    </div>
+                </div>
+            </nav>
+            <div id="headerBody">
+                <img src="img/ArduinoImg.jpg" id="videoHeader" >
+                <div id="contentHeader">
+                    <h1>
+                        Live Data
+                    </h1>
+                    <p id="headerIntroText">
+                        Vous &ecirc;tes sur la page: Live Data
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div id="contentPage">
+            <div id="LiveDataIntro">
+                <div id="TitleLiveDataPage">
+                    <h1>
+                        Live Data
+                    </h1>
+                </div>
+                <div id="BigTextLiveDataPage">
+                    <p>
+                        Vous pouvez voir ici les donn&eacute;es collect&eacute;es en direct sur le potager. En plus de l&rsquo;&eacute;tat des syst&egrave;mes d&rsquo;irrigation, etc.
+                    </p>
+                </div>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="LiveDataMainData">
+                <div id="LiveDataMainDataDiv1">
+                    <h4>
+                        Node MCU ESP 12 (ESP8266) Sensors
+                    </h4>
+                    <p>
+                        IBM Cloud connection status: <span class="" id="ESP001ConectionState"></span>
+                    </p>
+                    <h4>
+                        Node MCU ESP 12 (ESP8266) Reaction
+                    </h4>
+                    <p>
+                        IBM Cloud connection status: <span class="" id="ESP002ConectionState"></span>
+                    </p>
+                </div>
+                <div id="verticalSeparationLine"></div>
+                <div id="LiveDataMainDataDiv2">
+                    <h4>
+                       Toi: 
+                    </h4>
+                    <p>
+                        <span id="HoofStatus"></span> 
+                    </p>
+                    <h4>
+                        Sistéme de pluie artificiele:
+                    </h4>
+                    <p>
+                        <span id="ArtifiicalRainStatus"></span>
+                    </p>
+                    <h4>
+                        Sisteme d'arrosage:
+                    </h4>
+                    <p>
+                        <span id="WateringSistemStatus"></span>
+                    </p>
+                    <h4>
+                        Lampe UV:
+                    </h4>
+                    <p>
+                        <span id="UvLampStatus"></span>
+                    </p>
+                </div>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="LiveDataFirstChartRow">
+              <div id="CanvasParentDiv">
+                <canvas id="lineChartAirHumidity"></canvas>
+              </div>
+                <div id="verticalSeparationLine"></div>
+              <div id="CanvasParentDiv">
+                <canvas id="lineChartLux"></canvas>
+              </div>
+            </div>
+            <div id="HorizontalDivisionLine"></div>
+            <div id="LiveDataSecondChartRow">
+              <div id="CanvasParentDiv">
+                <canvas id="lineChartSoilMoisture"></canvas>
+              </div>
+                <div id="verticalSeparationLine"></div>
+              <div id="CanvasParentDiv"> 
+                <canvas id="lineChartAirTemp" ></canvas>
+              </div>
+            </div>
+        </div>
+        <script>
+          //Air Temperature Graph Definition
+          var AirTCanvas = document.getElementById("lineChartAirTemp");
+          var AirTChartConfigData = {
+            labels: [],
+            datasets: [
+              {
+                label: "Température de l'air",
+                fill: false,
+                backgroundColor: "rgba(54, 70, 78, 0.40)",
+                borderColor: "rgba(54, 70, 78, 0.40)",
+                pointRadius: 5,
+                pointHitRadius: 10,
+                data: [],
+              }
+            ]
+          };
+          var AirTChart = new Chart(AirTCanvas, {
+            type: 'line',
+            data: AirTChartConfigData,
+            xAxisID: "Température (en %)",
+            yAxisID: "Temps (en s)",
+            options: {
+              title: {
+                display: true,
+                text: "Température de l'air"
+              },
+              legend: {
+                position: "bottom"
+              },
+              responsive: true,
+              maintainAspectRatio: false,
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero:true
+                      }
+                  }]
+              }
+            }
+          });
+
+          //Air Humidity Graph Definition
+          var AirHCanvas = document.getElementById("lineChartAirHumidity");
+          var AirHChartConfigData = {
+            labels: [],
+            datasets: [
+              {
+                label: "Humidité de l'air",
+                fill: false,
+                backgroundColor: "rgba(54, 70, 78, 0.40)",
+                borderColor: "rgba(54, 70, 78, 0.40)",
+                pointRadius: 5,
+                pointHitRadius: 10,
+                data: [],
+              }
+            ]
+          };
+          var AirHChart = new Chart(AirHCanvas, {
+            type: 'line',
+            data: AirHChartConfigData,
+            xAxisID: "Humidité (en %)",
+            yAxisID: "Temps (en s)",
+            options: {
+              title: {
+                display: true,
+                text: "Humidité de l'air"
+              },
+              legend: {
+                position: "bottom"
+              },
+              responsive: true,
+              maintainAspectRatio: false,
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero:true
+                      }
+                  }]
+              }
+            }
+          });
+
+          //Lux Chart
+          var LuxCanvas = document.getElementById("lineChartLux");
+          var LuxChartConfigData = {
+            labels: [],
+            datasets: [
+              {
+                label: "Luminosité",
+                fill: false,
+                backgroundColor: "rgba(54, 70, 78, 0.40)",
+                borderColor: "rgba(54, 70, 78, 0.40)",
+                pointRadius: 5,
+                pointHitRadius: 10,
+                data: [],
+              }
+            ]
+          };
+          var LuxChart = new Chart(LuxCanvas, {
+            type: 'line',
+            data: LuxChartConfigData,
+            xAxisID: "Luminosité (en Lux)",
+            yAxisID: "Temps (en s)",
+            options: {
+              title: {
+                display: true,
+                text: "Luminosité"
+              },
+              legend: {
+                position: "bottom"
+              },
+              responsive: true,
+              maintainAspectRatio: false,
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero:true
+                      }
+                  }]
+              }
+            }
+          });
+
+          //Soil Moisture chart
+          var SoilMoistureCanvas = document.getElementById("lineChartSoilMoisture");
+          var SoilMoistureChartConfigData = {
+            labels: [],
+            datasets: [
+              {
+                label: "Humidité du sol",
+                fill: false,
+                backgroundColor: "rgba(54, 70, 78, 0.40)",
+                borderColor: "rgba(54, 70, 78, 0.40)",
+                pointRadius: 5,
+                pointHitRadius: 10,
+                data: [],
+              }
+            ]
+          };
+          var SoilMoistureChart = new Chart(SoilMoistureCanvas, {
+            type: 'line',
+            data: SoilMoistureChartConfigData,
+            xAxisID: "Humidité du sol (en %)",
+            yAxisID: "Temps (en s)",
+            options: {
+              title: {
+                display: true,
+                text: "Humidité"
+              },
+              legend: {
+                position: "bottom"
+              },
+              responsive: true,
+              maintainAspectRatio: false,
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero:true
+                      }
+                  }]
+              }
+            }
+          });
+
+          //HTTP request to retrie data from database
+
+          var isIE8 = window.XDomainRequest ? true : false;
+          var url = 'https://zhepasteur.sslblindado.com//TPE/getDataFromDB.php';
+          var resetCharts = 0;
+          var resultText = '';
+          var invocation = createCrossDomainRequest();
+          makeRequest();
+
+          function createCrossDomainRequest(url, handler) {
+            var request;
+            if (isIE8) {
+              request = new window.XDomainRequest();
+            } else {
+              request = new XMLHttpRequest();
+            }
+            return request;
+          }
+
+          function makeRequest() {
+            if (invocation) {
+              if (isIE8) {
+                  invocation.onload = requestSucceeded;
+                  invocation.open("GET", url, true);
+                  invocation.open('GET', url, true);
+                  invocation.setRequestHeader('Access-Control-Allow-Origin', '*');
+                  invocation.setRequestHeader('Access-Control-Allow-Methods', 'POST, GET, DELETE, PUT');
+                  invocation.setRequestHeader('Access-Control-Allow-Headers', 'x-requested-with,Content-Type');
+                  invocation.send();
+              } else {
+                  invocation.open('GET', url, true);
+                  invocation.setRequestHeader('Access-Control-Allow-Origin', '*');
+                  invocation.setRequestHeader('Access-Control-Allow-Methods', 'POST, GET, DELETE, PUT');
+                  invocation.setRequestHeader('Access-Control-Allow-Headers', 'x-requested-with,Content-Type');
+                  invocation.onreadystatechange = handler;
+                  invocation.send();
+              }
+            } else {
+              resultText = "No Invocation TookPlace At All";
+            }
+          }
+
+          function handler(evtXHR) {
+            if (invocation.readyState == 4) {
+              if(invocation.status == 200){
+                var response = JSON.parse(invocation.response);
+                if(potato == 0){
+                  var potato = 1;
+                  var resetCharts = 0;
+                }
+                var ESP1StatusIBM = response.ESP1StatusIBM;
+                var ESP2StatusIBM = response.ESP2StatusIBM;
+                var dt = new Date();
+                var DateMsgESP1 = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                var DateMsgESP2 = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                var AirT = response.AirT;
+                var AirH = response.AirH;
+                var Lux = response.Lux;
+                var SM = response.SM;
+                var HoofOpened = response.HoofOpened;
+                var UvStatus = response.UvStatus;
+                var ArtificialRain = response.ArtificialRain;
+                var WateringStatus = response.WateringStatus;
+                
+                var SoilMoisturePecentageMath = SM*100;
+                var SoilMoisturtePercentage = SoilMoisturePecentageMath/1024;
+
+                //Update Air Temperature Chart
+                AirTChart.data.datasets[0].data.push(AirT);
+                AirTChart.data.labels.push(DateMsgESP1);
+                AirTChart.update();
+                //Update Air Humidity Chart
+                AirHChart.data.datasets[0].data.push(AirH);
+                AirHChart.data.labels.push(DateMsgESP1);
+                AirHChart.update();
+                //Update Lux chart
+                LuxChart.data.datasets[0].data.push(Lux);
+                LuxChart.data.labels.push(DateMsgESP1);
+                LuxChart.update();
+                //Update Soil Moisture Chart 
+                SoilMoistureChart.data.datasets[0].data.push(SoilMoisturtePercentage);
+                SoilMoistureChart.data.labels.push(DateMsgESP1);
+                SoilMoistureChart.update();
+                
+                if(ESP1StatusIBM == 1){
+                  $("#ESP001ConectionState").removeClass("disconnected").addClass("connected").empty().append("connecté");
+                }else{
+                  $("#ESP001ConectionState").removeClass("connected").addClass("disconnected").empty().append("déconnecté");
+                }
+
+                if(ESP2StatusIBM == 1){
+                  $("#ESP002ConectionState").removeClass("disconnected").addClass("connected").empty().append("connecté");
+                }else{
+                  $("#ESP002ConectionState").removeClass("connected").addClass("disconnected").empty().append("déconnecté");
+                }
+
+                if(HoofOpened == 1){
+                  $("#HoofStatus").empty().append("ouvert");
+                }else{
+                  $("#HoofStatus").empty().append("fermée");
+                }
+                if(ArtificialRain == 1){
+                  $("#ArtifiicalRainStatus").empty().append("systéme allumé");
+                }else{
+                  $("#ArtifiicalRainStatus").empty().append("systéme eteint");
+                }
+                if(WateringStatus == 1){
+                  $("#WateringSistemStatus").empty().append("systéme allumé");
+                }else{
+                  $("#WateringSistemStatus").empty().append("systéme eteint");
+                }
+                if(UvStatus == 1){
+                  $("#UvLampStatus").addClass(".connected").empty().append("allumé");
+                }else{
+                  $("#UvLampStatus").empty().append("eteint");
+                }
+                setTimeout(function(){
+                  makeRequest();
+                }, 5000);
+              }else{
+                resultText = "Error while trying to retrieve data from the DataBase. System responded with status code" + invocation.status;
+              }
+            }
+          }
+          
+        </script>
+      
+      <footer class="page-footer font-small special-color">
+        <div class="footer-copyright text-center py-3">TPE: Potager automatique par Victor Gomez, Victor Pires et Nicolas Weisse</div>  
+      </footer>
+    </div>
+    <!--End Live Data Page-->
+  </body>
+</html>
