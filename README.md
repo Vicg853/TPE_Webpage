@@ -1,5 +1,5 @@
 <div align="center" >
-# POTAGER AUTOMATIQUE <br/>
+  <h1>POTAGER AUTOMATIQUE</h1>
 </div>
 
 ![](https://github.com/Vicg853/TPE_Webpage/blob/8623e1b4afd346fe05b9452273d181ea8939a131/IMG_20190531_100248349_HDR.jpg)
