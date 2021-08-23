@@ -1,7 +1,8 @@
 <div align="center" >
-# POTAGER AUTOMATIQUE
-![](https://github.com/Vicg853/TPE_Webpage/blob/8623e1b4afd346fe05b9452273d181ea8939a131/IMG_20190531_100248349_HDR.jpg)
+# POTAGER AUTOMATIQUE <br/>
 </div>
+
+![](https://github.com/Vicg853/TPE_Webpage/blob/8623e1b4afd346fe05b9452273d181ea8939a131/IMG_20190531_100248349_HDR.jpg)
 
 ### _A smart garden for a school project..._
 ... The project consists of the idea of a smart garden that would take care of a few lettuces. Sadly, most of the code, more specifically backend code that managed the decisions and the two ESP32 is lost. But the front-end webpage code with the project's video, images, and explanation is saved, and the website is live (the website is in French, as it was a French school) 
