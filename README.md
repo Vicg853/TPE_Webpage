@@ -7,6 +7,9 @@
 ### _A smart garden for a school project..._
 ... The project consists of the idea of a smart garden that would take care of a few lettuces. Sadly, most of the code, more specifically backend code that managed the decisions and the two ESP32 is lost. But the front-end webpage code with the project's video, images, and explanation is saved, and the website is live (the website is in French, as it was a French school) 
 
+Access the [project's webpage](http://potagerautomatique.herokuapp.com/)
+- - - -
+
 ### Tecnologies used
 - Node-Red on IBM Cloud, to make the decisions based on the conditions
 - C++ to code the two ESP32 systems, using MQTT and Wi-Fi libraries to manage communication
@@ -44,14 +47,11 @@ This readme is getting more scientific info than code info, but let's just check
 
 - - - -
 
-## Access
-Access the [project's webpage](http://potagerautomatique.herokuapp.com/)
-- - - -
-
 ## Some photos
 ![](https://github.com/Vicg853/TPE_Webpage/blob/94d7f2c4289a00a08c1e43cd578d03ccde1862a6/IMG-20190605-WA0009.jpg)
 ![](https://github.com/Vicg853/TPE_Webpage/blob/94d7f2c4289a00a08c1e43cd578d03ccde1862a6/IMG-20190623-WA0001.jpg)
 ![](https://github.com/Vicg853/TPE_Webpage/blob/94d7f2c4289a00a08c1e43cd578d03ccde1862a6/IMG-20190806-WA0002.jpg)
+- - - -
 
 ##License
 _MIT_
